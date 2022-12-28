@@ -48,6 +48,15 @@
   );
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: var(--blue-300);
+}
+
 .mt-15 {
   margin-top: 60px;
 }

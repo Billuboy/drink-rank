@@ -6,6 +6,7 @@
 .container > div {
   display: flex;
   align-items: center;
+  flex-direction: column;
   column-gap: 40px;
   width: max-content;
   margin: 0 auto;
@@ -24,4 +25,10 @@
 
 .container > p {
   color: var(--gray-400);
+}
+
+@media (min-width: 768px) {
+  .container > div {
+    flex-direction: row;
+  }
 }

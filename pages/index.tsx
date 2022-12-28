@@ -10,7 +10,7 @@ const StylesPage: NextPage = function () {
     <>
       <SEO
         title="BEV RANK"
-        description="Bev Rank helps you rank your beverages from best to worst"
+        description="Bev Rank helps you rank your beverages from best to worst!"
       />
       <StyleSections />
     </>

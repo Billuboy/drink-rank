@@ -1,0 +1,45 @@
+.dialog-panel-outer-container {
+  position: fixed;
+  inset: 0;
+  overflow-y: auto;
+}
+
+.dialog-panel-inner-container {
+  display: flex;
+  min-height: 100%;
+  justify-content: flex-start;
+}
+
+.panel {
+  width: 100%;
+  overflow: hidden;
+  background: var(--blue-200);
+  text-align: left;
+  padding: 12px 32px 12px 24px;
+}
+
+.cross {
+  stroke: var(--white);
+  fill: var(--white);
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+.logo {
+  width: 200px;
+}
+
+.panel-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.panel-top ~ a {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 32px;
+  color: var(--white);
+}

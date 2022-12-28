@@ -21,15 +21,15 @@ export default function Icons() {
       <div className={`py-15 ${styles.container}`}>
         <Show className="icon" />
         <Hide className="icon" />
-        <Cross className="icon" />
+        <Cross className={`icon ${styles.cross}`} />
         <DownArrow className="icon" />
         <UpArrow className="icon" />
         <RightArrow className="icon" />
         <Search className="icon" />
         <Hamburger className="icon" />
-        <Star className="icon" />
+        <Star className={`icon ${styles.star}`} />
         <Star className={`icon ${styles['filled-star']}`} />
-        <Heart className="icon" />
+        <Heart className={`icon ${styles.heart}`} />
       </div>
       <hr className="dashed-rule" />
     </>

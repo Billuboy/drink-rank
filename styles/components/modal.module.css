@@ -67,11 +67,14 @@
 
 .title {
   border: 1px solid var(--blue-400);
+  display: flex;
+  justify-items: flex-end;
 }
 
 .title > svg {
   width: 1.5rem;
   height: 1.5rem;
+  fill: var(--blue-300);
   margin-left: auto;
   cursor: pointer;
   border: 1px solid var(--blue-400);

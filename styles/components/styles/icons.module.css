@@ -8,3 +8,15 @@
 .filled-star {
   fill: var(--blue-300);
 }
+
+.cross {
+  fill: var(--blue-300);
+}
+
+.star {
+  stroke: var(--blue-300);
+}
+
+.heart {
+  stroke: var(--blue-300);
+}
