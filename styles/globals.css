@@ -77,8 +77,6 @@
     padding: 60px 0 60px 0;
   }
 
-<<<<<<< HEAD
-=======
   .py-19 {
     padding: 76px 0 76px 0;
   }
@@ -95,7 +93,6 @@
     height: 72px;
   }
 
->>>>>>> da311d1 (Reverted styles)
   .color-card {
     width: 60px;
     height: 60px;
@@ -126,9 +123,6 @@
     height: 1px;
     width: 640px;
     margin: 0 auto;
-<<<<<<< HEAD
-    border: 1px dashed theme(colors.gray.300);
-=======
     border: 1px dashed var(--gray-300);
   }
 
@@ -143,7 +137,6 @@
     height: 1px;
     margin: 0 auto;
     border: 1px dashed var(--gray-300);
->>>>>>> da311d1 (Reverted styles)
   }
 
   .heading-1 {
@@ -233,8 +226,6 @@
     font-size: 13px;
     line-height: 22px;
   }
-<<<<<<< HEAD
-=======
 
   .bg-gradient-1 {
     background: linear-gradient(
@@ -244,5 +235,4 @@
       #ff078d 100%
     );
   }
->>>>>>> da311d1 (Reverted styles)
 }

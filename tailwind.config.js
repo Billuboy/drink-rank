@@ -7,13 +7,9 @@ module.exports = {
   ],
   theme: {
     colors: {
-<<<<<<< HEAD
-      white: '#fff',
-=======
       transparent: 'transparent',
       white: '#fff',
       black: '#000',
->>>>>>> da311d1 (Reverted styles)
       gray: {
         100: '#F8F8F8',
         200: '#F5F5F5',
@@ -49,14 +45,11 @@ module.exports = {
       fontSize: {
         xxs: '10px',
       },
-<<<<<<< HEAD
-=======
       boxShadow: {
         button: '0 4px 0 #000B6F',
         input: '3px 6px 0 #000B6F ',
         card: '8px 12px 0 #000B6F',
       },
->>>>>>> da311d1 (Reverted styles)
     },
   },
   plugins: [],
