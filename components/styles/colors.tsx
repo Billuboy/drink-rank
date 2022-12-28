@@ -7,7 +7,7 @@ export default function Colors() {
     'var(--white)',
     'var(--gray-100',
     'var(--gray-200',
-    '(--gray-300)',
+    'var(--gray-300)',
     'var(--gray-400)',
     'var(--gray-500)',
     'var(--gray-600)',

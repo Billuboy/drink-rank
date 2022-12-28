@@ -11,12 +11,12 @@ export default function ModalSection() {
   return (
     <>
       <h1 className="heading-1 my-15">Modal</h1>
-      <div className="py-64">
+      <div className={styles.container}>
         <Button
           text="Show Modal"
           onClick={() => setIsOpen(true)}
           styles={{
-            button: `button-1 ${
+            button: `button-1 ${styles['modal-button-base']} ${
               isOpen
                 ? styles['modal-button-clicked']
                 : styles['modal-button-not-clicked']

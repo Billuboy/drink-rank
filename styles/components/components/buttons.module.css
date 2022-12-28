@@ -12,6 +12,7 @@
   border-radius: 12px;
   border: 1px soild var(--blue-300);
   color: var(--white);
+  height: max-content;
 }
 
 .awesome-button-not-clicked {
@@ -77,6 +78,7 @@
 .star-button-base > svg {
   width: 1.5rem;
   height: 1.5rem;
+  margin-bottom: -6px;
 }
 
 .star-button-not-clicked {
@@ -110,11 +112,13 @@
 .heart-button-base {
   padding: 12px;
   border-radius: 50%;
+  border: 0px;
 }
 
 .heart-button-base > svg {
   width: 1.5rem;
   height: 1.5rem;
+  margin-bottom: -6px;
 }
 
 .heart-button-not-clicked {

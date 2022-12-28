@@ -1,19 +1,27 @@
 .container {
-  @apply text-center py-6;
+  text-align: center;
+  padding: 24px 0;
 }
 
 .container > div {
-  @apply flex items-center gap-x-10 w-max mx-auto text-blue-300 mb-1;
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  width: max-content;
+  margin: 0 auto;
+  color: var(--blue-300);
+  margin-bottom: 4px;
 }
 
 .container > div > a {
-  @apply underline hover:text-blue-200;
+  color: var(--blue-300);
+  text-decoration: underline;
 }
 
-.container > div > p {
-  @apply text-xl font-extrabold;
+.container > div > a:hover {
+  color: var(--blue-200);
 }
 
 .container > p {
-  @apply text-gray-400 text-xxs leading-4;
+  color: var(--gray-400);
 }

@@ -1,11 +1,23 @@
+.container {
+  padding: 260px 0;
+}
+
+.modal-button-base {
+  padding: 12px 40px;
+  border-radius: 12px;
+  border: 1px soild var(--blue-300);
+  color: var(--white);
+}
+
 .modal-button-not-clicked {
-  @apply py-3 px-10 rounded-xl border border-blue-300 text-white bg-purple-300;
+  background: var(--purple-300);
 }
 
 .modal-button-not-clicked:hover {
-  @apply bg-pink-300 shadow-button;
+  background: var(--pink-300);
+  box-shadow: 0 4px 0 var(--blue-300);
 }
 
 .modal-button-clicked {
-  @apply py-3 px-10 rounded-xl border border-blue-300 text-white bg-pink-300;
+  background: var(--pink-300);
 }

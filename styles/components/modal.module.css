@@ -65,11 +65,16 @@
   scale: 1;
 }
 
+.title {
+  border: 1px solid var(--blue-400);
+}
+
 .title > svg {
   width: 1.5rem;
   height: 1.5rem;
   margin-left: auto;
   cursor: pointer;
+  border: 1px solid var(--blue-400);
 }
 
 .description {
@@ -100,6 +105,7 @@
   border-radius: 30px;
   color: var(--gray-400);
   font-weight: 800;
+  border: 0;
 }
 
 .email-input-container:hover {
@@ -146,6 +152,7 @@
   border-radius: 30px;
   color: var(--gray-400);
   font-weight: 800;
+  border: 0;
 }
 
 .password-input-container > svg {
