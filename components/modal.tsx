@@ -30,51 +30,59 @@ export default function Modal({ isOpen, closeCB }: Props) {
       >
         <Transition.Child
           as={Fragment}
-          enter="ease-out duration-300"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="ease-in duration-200"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
+          enter={styles['overlay-transition-enter']}
+          enterFrom={styles['overlay-transition-enterFrom']}
+          enterTo={styles['overlay-transition-enterTo']}
+          leave={styles['overlay-transition-leave']}
+          leaveFrom={styles['overlay-transition-enterTo']}
+          leaveTo={styles['overlay-transition-enterFrom']}
         >
-          <Dialog.Overlay className="fixed inset-0 bg-black bg-opacity-25" />
+          <Dialog.Overlay className={styles.overlay} />
         </Transition.Child>
 
-        <div className="fixed inset-0 overflow-y-auto">
-          <div className="flex min-h-full items-center justify-center">
-            <Dialog.Panel
-              className={`${styles.body} transform bg-white transition-all`}
+        <div className={styles['dialog-outer-div']}>
+          <div className={styles['dialog-inner-div']}>
+            <Transition.Child
+              as={Fragment}
+              enter={styles['panel-transition-enter ']}
+              enterFrom={styles['panel-transition-enterFrom']}
+              enterTo={styles['panel-transition-enterTo']}
+              leave={styles['panel-transition-leave']}
+              leaveFrom={styles['panel-transition-enterTo']}
+              leaveTo={styles['panel-transition-enterFrom']}
             >
-              <Dialog.Title as="div" className={styles.title}>
-                <Cross onClick={closeCB} />
-              </Dialog.Title>
-              <Dialog.Description as="div" className={styles.description}>
-                <h6 className="body-1">Log in</h6>
-                <Input
-                  placeholder="Email Address"
-                  styles={{
-                    'input-container': styles['email-input-container'],
-                  }}
-                />
-                <Input
-                  placeholder="Password"
-                  Icon={show ? ShowIcon : HideIcon}
-                  type={show ? 'text' : 'password'}
-                  styles={{
-                    'input-container': styles['password-input-container'],
-                  }}
-                />
-                <Button
-                  text="Log In!"
-                  onClick={closeCB}
-                  styles={{ button: styles['login-button'] }}
-                />
-                <hr className="small-dashed-rule" />
-                <Link href="/" className={`body-1 ${styles['bottom-text']}`}>
-                  Create a new account
-                </Link>
-              </Dialog.Description>
-            </Dialog.Panel>
+              <Dialog.Panel className={styles.body}>
+                <Dialog.Title as="div" className={styles.title}>
+                  <Cross onClick={closeCB} />
+                </Dialog.Title>
+                <Dialog.Description as="div" className={styles.description}>
+                  <h6 className="body-1">Log in</h6>
+                  <Input
+                    placeholder="Email Address"
+                    styles={{
+                      'input-container': styles['email-input-container'],
+                    }}
+                  />
+                  <Input
+                    placeholder="Password"
+                    Icon={show ? ShowIcon : HideIcon}
+                    type={show ? 'text' : 'password'}
+                    styles={{
+                      'input-container': styles['password-input-container'],
+                    }}
+                  />
+                  <Button
+                    text="Log In!"
+                    onClick={closeCB}
+                    styles={{ button: styles['login-button'] }}
+                  />
+                  <hr className="small-dashed-rule" />
+                  <Link href="/" className={`body-1 ${styles['bottom-text']}`}>
+                    Create a new account
+                  </Link>
+                </Dialog.Description>
+              </Dialog.Panel>
+            </Transition.Child>
           </div>
         </div>
       </Dialog>

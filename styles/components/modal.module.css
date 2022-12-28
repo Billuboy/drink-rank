@@ -2,6 +2,67 @@
   padding: 12px;
   border-radius: 16px;
   padding-top: 12px;
+  transform: translate;
+  transition: all;
+  background: var(--white);
+}
+
+.overlay-container {
+  position: relative;
+  z-index: 10;
+}
+
+.dialog-outer-div {
+  position: fixed;
+  inset: 0;
+  overflow-y: auto;
+}
+
+.dialog-inner-div {
+  display: flex;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.overlay-transition-enter {
+  transition: all ease-out 300ms;
+}
+
+.overlay-transition-leave {
+  transition: all ease-in 200ms;
+}
+
+.overlay-transition-enterFrom {
+  opacity: 0;
+}
+
+.overlay-transition-enterTo {
+  opacity: 1;
+}
+
+.panel-transition-enter {
+  transition: all ease-out 300ms;
+}
+
+.panel-transition-leave {
+  transition: all ease-in 200ms;
+}
+
+.panel-transition-enterFrom {
+  opacity: 0;
+  scale: 0.95;
+}
+
+.panel-transition-enterTo {
+  opacity: 1;
+  scale: 1;
 }
 
 .title > svg {
@@ -17,7 +78,7 @@
 }
 
 .description > h6 {
-  margin: 12px 0 0 24px;
+  margin: 12px 0 24px 0;
   color: var(--blue-300);
 }
 
