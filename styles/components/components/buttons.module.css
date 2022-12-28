@@ -1,0 +1,138 @@
+.container {
+  width: max-content;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 75px 0;
+  column-gap: 40px;
+}
+
+.awesome-button-base {
+  padding: 12px 40px;
+  border-radius: 12px;
+  border: 1px soild var(--blue-300);
+  color: var(--white);
+}
+
+.awesome-button-not-clicked {
+  background-color: var(--purple-300);
+}
+
+.awesome-button-not-clicked:hover {
+  background-color: var(--pink-300);
+  box-shadow: 0 4px 0 var(--blue-300);
+}
+
+.awesome-button-clicked {
+  background-color: var(--pink-300);
+}
+
+.like-button-base {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.like-button-base > svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.like-button-not-clicked {
+  color: var(--blue-300);
+  background-color: var(--white);
+  border: 1px solid var(--blue-300);
+}
+
+.like-button-not-clicked > svg {
+  stroke: var(--blue-300);
+}
+
+.like-button-not-clicked:hover {
+  color: var(--white);
+  background: var(--gradient-1);
+  border-color: var(--transparent);
+}
+
+.like-button-not-clicked:hover > svg {
+  stroke: var(--white);
+}
+
+.like-button-clicked {
+  background-color: var(--blue-300);
+  color: var(--white);
+}
+
+.like-button-clicked > svg {
+  fill: var(--pink-300);
+}
+
+.star-button-base {
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.star-button-base > svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.star-button-not-clicked {
+  background: var(--white);
+  border: 1px solid var(--blue-300);
+}
+
+.star-button-not-clicked > svg {
+  stroke: var(--blue-300);
+}
+
+.star-button-not-clicked:hover {
+  border-color: var(--transparent);
+  background: var(--gradient-2);
+}
+
+.star-button-not-clicked:hover > svg {
+  stroke: var(--white);
+}
+
+.star-button-clicked {
+  background: var(--blue-300);
+  border: 1px solid var(--blue-300);
+}
+
+.star-button-clicked > svg {
+  stroke: var(--yellow);
+  fill: var(--yellow);
+}
+
+.heart-button-base {
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.heart-button-base > svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.heart-button-not-clicked {
+  background: var(--white);
+}
+
+.heart-button-not-clicked > svg {
+  stroke: var(--blue-300);
+}
+
+.heart-button-not-clicked:hover > svg {
+  stroke: var(--blue-200);
+}
+
+.heart-button-clicked {
+  background: var(--blue-200);
+}
+
+.heart-button-clicked > svg {
+  stroke: var(--white);
+}

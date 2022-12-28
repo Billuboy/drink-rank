@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  column-gap: 40px;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.filled-star {
+  fill: var(--blue-300);
+}

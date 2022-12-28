@@ -1,0 +1,12 @@
+export { default as Cross } from './cross.svg';
+export { default as DownArrow } from './downArrow.svg';
+export { default as Hamburger } from './hamburger.svg';
+export { default as Heart } from './heart.svg';
+export { default as Hide } from './hide.svg';
+export { default as RightArrow } from './rightArrow.svg';
+export { default as Search } from './search.svg';
+export { default as Show } from './show.svg';
+export { default as Star } from './star.svg';
+export { default as UpArrow } from './upArrow.svg';
+export { default as LoginShark1 } from './loginShark1.svg';
+export { default as LoginShark2 } from './loginShark2.svg';

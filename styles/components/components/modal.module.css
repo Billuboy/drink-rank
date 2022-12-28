@@ -1,0 +1,11 @@
+.modal-button-not-clicked {
+  @apply py-3 px-10 rounded-xl border border-blue-300 text-white bg-purple-300;
+}
+
+.modal-button-not-clicked:hover {
+  @apply bg-pink-300 shadow-button;
+}
+
+.modal-button-clicked {
+  @apply py-3 px-10 rounded-xl border border-blue-300 text-white bg-pink-300;
+}

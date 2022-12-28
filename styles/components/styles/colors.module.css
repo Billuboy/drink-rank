@@ -1,0 +1,14 @@
+.colors-container {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.colors-container:first-child {
+  margin-bottom: 40px;
+}
+
+.colors-container:last-of-type {
+  margin-bottom: 60px;
+}

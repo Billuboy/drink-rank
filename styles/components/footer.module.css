@@ -1,0 +1,19 @@
+.container {
+  @apply text-center py-6;
+}
+
+.container > div {
+  @apply flex items-center gap-x-10 w-max mx-auto text-blue-300 mb-1;
+}
+
+.container > div > a {
+  @apply underline hover:text-blue-200;
+}
+
+.container > div > p {
+  @apply text-xl font-extrabold;
+}
+
+.container > p {
+  @apply text-gray-400 text-xxs leading-4;
+}

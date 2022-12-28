@@ -1,0 +1,77 @@
+.container {
+  position: sticky;
+  top: 0;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.logo {
+  width: 200px;
+}
+
+.left-container {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.left-container > a:nth-child(n + 2) {
+  text-decoration: underline;
+  color: var(--blue-300);
+}
+
+.left-container > a:nth-child(n + 2):hover {
+  color: var(--blue-200);
+}
+
+.right-container {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.input-container {
+  width: 240px;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  border-radius: 30px;
+  background: var(--gray-200);
+}
+
+.input-container:hover {
+  box-shadow: 0 0 0 2px var(--gray-400);
+}
+
+.input-container:focus-within {
+  box-shadow: 3px 6px 0 var(--blue-300), 0 0 0 2px var(--blue-300);
+}
+
+.input-container > input:focus {
+  outline: none;
+  color: var(--pink-300);
+}
+
+.input-container > input {
+  width: 90%;
+  height: max-content;
+  background: var(--gray-200);
+  border-radius: 30px;
+  color: var(--gray-400);
+  font-weight: 800;
+  padding: 12px 0;
+}
+
+.input-container > svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.form-container {
+  width: max-content;
+  margin: 0 auto;
+}
