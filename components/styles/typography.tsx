@@ -12,16 +12,16 @@ export default function Typography() {
         <h4 className="heading-3">H3</h4>
         <h5 className="heading-4">H4</h5>
         <h6 className="heading-5">H5</h6>
-        <h2 className="heading-6">H6</h2>
-        <h2 className="subtitle-1">Subtitle 1</h2>
-        <h2 className="subtitle-2">Subtitle 2</h2>
-        <h2 className="body-1">Body 1</h2>
-        <h2 className="body-2">Body 2</h2>
-        <h2 className="caption">Caption</h2>
-        <h2 className="text-overline">Overline</h2>
-        <h2 className="button-1">Button</h2>
-        <h2 className="button-2">Button</h2>
-        <h2 className="button-3">Button</h2>
+        <p className="heading-6">H6</p>
+        <p className="subtitle-1">Subtitle 1</p>
+        <p className="subtitle-2">Subtitle 2</p>
+        <p className="body-1">Body 1</p>
+        <p className="body-2">Body 2</p>
+        <p className="caption">Caption</p>
+        <p className="text-overline">Overline</p>
+        <p className="button-1">Button</p>
+        <p className="button-2">Button</p>
+        <p className="button-3">Button</p>
       </div>
       <hr className="dashed-rule" />
     </>

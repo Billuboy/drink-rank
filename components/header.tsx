@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <header className={styles.container}>
       <div className={styles['left-container']}>
-        <Link href="/">
+        <Link href="/" aria-labelledby="BEV RANK logo">
           <Logo className={styles.logo} />
         </Link>
         <Link href="/">Styles</Link>
